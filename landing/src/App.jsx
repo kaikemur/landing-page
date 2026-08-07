@@ -46,9 +46,29 @@ const products = [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rbo5_-kvNYt4hpTxslbRFUNAGnFOONZVInbZsg3SVpPtMSJep11gJ-vo&s=10',
   },
   {
-    name: 'Tênis Clean',
+    name: 'Tênis',
     image:
       'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSw2mgFysj0ekRjW5UqqLLeNV3FnPz3FbUqnSD25k6BstuBZcYt8FRTUxqSV1rEIAuWmvrzbWqULWafs23KOGTgEcZD_-4MAispEfMeNu4J9W-JxLCORNGk5VFg',
+  },
+    {
+    name: 'moletom',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2e8CcxQy0mTC_qTdiMz0fXBVp9qkgHnfecYRm4CGyIctPEtqF6Yo__w&s=10',
+  },
+  {
+    name: 'Chinelo Nuvem',
+    image:
+      'https://http2.mlstatic.com/D_NQ_NP_2X_777839-MLB104798835484_012026-F-chinelo-nuvem-original-slide-retro-100-eva-confortavel-lanc.webp',
+  },
+  {
+    name: 'Calça Jeans',
+    image:
+      'https://cdn.awsli.com.br/2500x2500/1100/1100536/produto/227352798/image--3--xr59uv40lj.jpg',
+  },
+  {
+    name: 'Sapato tratorada',
+    image:
+      'https://img.ltwebstatic.com/images3_spmp/2025/02/11/a3/1739269942ddccab5686f67e9873f9d6dc53f601a2_thumbnail_405x.jpg',
   },
 ]
 
@@ -94,7 +114,7 @@ function App() {
             <p className="text-sm font-semibold uppercase text-gray-500">
               Coleção básica e elegante
             </p>
-            <h1 className="mt-4 text-3xl font-bold text-black md:text-4xl">
+            <h1 className="mt-4 text-3xl font-bold text-black md:text-5xl">
               Roupas simples, confortáveis e com preço justo.
             </h1>
             <p className="mt-4 max-w-xl text-base text-gray-500">
@@ -155,7 +175,7 @@ function App() {
             {products.map((product) => (
               <article key={product.name} className="overflow-hidden rounded-lg border border-gray-300 bg-white shadow-md">
                 <div
-                  className="h-56 w-full bg-cover bg-center bg-no-repeat"
+                  className="h-72 w-full bg-cover bg-center bg-no-repeat sm:h-80"
                   style={{ backgroundImage: `url('${product.image}')` }}
                   aria-label={product.name}
                   role="img"
