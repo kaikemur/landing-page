@@ -1,10 +1,13 @@
 {
   "name": "landing-page-root",
   "private": true,
+  "workspaces": [
+    "landing"
+  ],
   "scripts": {
-    "build": "npm --prefix landing run build",
-    "dev": "npm --prefix landing run dev",
-    "lint": "npm --prefix landing run lint",
-    "preview": "npm --prefix landing run preview"
+    "build": "npm run build --workspace landing",
+    "dev": "npm run dev --workspace landing",
+    "lint": "npm run lint --workspace landing",
+    "preview": "npm run preview --workspace landing"
   }
 }
