@@ -10,6 +10,7 @@ import {
   FaFacebookF,
   FaWhatsapp,
 } from 'react-icons/fa6'
+import heroImage from './assets/hero.png'
 
 const benefits = [
   {
@@ -81,7 +82,14 @@ const testimonials = [
 function App() {
   return (
     <div className="min-h-screen bg-[url('https://finastampadecor.com.br/loja/wp-content/uploads/2023/03/45021.jpg?v=1678886242')] bg-cover bg-center bg-no-repeat text-black">
-      <div className="min-h-screen bg-white/75">
+      <div className="bg-white/75">
+        <div className="mx-auto max-w-7xl px-4 py-8">
+          <img
+            src={heroImage}
+            alt="Coleção de roupas em destaque"
+            className="h-[240px] w-full rounded-xl object-cover shadow-md sm:h-[340px] md:h-[480px]"
+          />
+        </div>
       <header className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-2">
           <div className="flex size-12 items-center justify-center rounded-lg bg-slate-900 text-white shadow-lg">
